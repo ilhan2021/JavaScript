@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="textNum" placeholder="Lütfen bir sayı giriniz">
+    <button id="buton" onclick="sonuc()">Sonuc</button>
+    <script>
+        
+        
+        function sonuc() { 
+           let numberEl = document.querySelector("#textNum");         
+           let  resultEl = isPalindrome(numberEl.value);
+            console.log(resultEl);
+            alert(`${numberEl.value} is ${resultEl ? "" : "not"} palindrome`);            
+        }
+        
+        function isPalindrome(number) {
+            let temp = number;
+            let tersSayi ="";           
+            while(temp>0){
+            let yeniSayi = temp%10;
+            tersSayi += yeniSayi
+            temp= Math.floor(temp/10);
+            console.log(tersSayi);
+            }
+            return number == tersSayi? true : false;
+          
+        }
+
+    </script>
+</body>
+</html>

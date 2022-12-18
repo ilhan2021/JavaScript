@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .col button {
+        margin: 0.8rem;
+        background-color: aquamarine;
+        color:black;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <input type="text" class="txtAdd" />
+          <button type="button" id="addBtn">Add</button>
+        </div>
+        <div class="col">
+          <button type="button" id="sortBtn">Sort</button>
+          <button type="button" id="reverseBtn">Reverse</button>
+          <button type="button" id="rmvLastBtn">Remove Last</button>
+          <button type="button" id="rmvFirstBtn">Remove First</button>
+          <button type="button" id="rmvAllBtn">Remove All</button>
+          <button type="button" id="mixBtn">Mix</button>
+        </div>
+        <div class="col">
+          <ul id="listOfArrays">
+         
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../homework-01/css/style.css" />
+  </head>
+  <body>
+    <section class="cerceve">
+      <div class="ekran">
+        <h1 class="baslik"></h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <button onclick="islemtype('^')" class="btn" type="button">^</button>
+          <button onclick="sil('C')" class="btn" type="button">C</button>
+          <button onclick="islemtype('%')" class="btn" type="button">%</button>
+          <button onclick="islemtype('/')" class="btn" type="button">
+            ÷<!-- alt +246 -->
+          </button>
+        </div>
+        <div class="row">
+          <button onclick="sayi('7')" class="btn" type="button">7</button>
+          <button onclick="sayi('8')" class="btn" type="button">8</button>
+          <button onclick="sayi('9')" class="btn" type="button">9</button>
+          <button onclick="islemtype('*')" class="btn" type="button">x</button>
+        </div>
+        <div class="row">
+          <button onclick="sayi('4')" class="btn" type="button">4</button>
+          <button onclick="sayi('5')" class="btn" type="button">5</button>
+          <button onclick="sayi('6')" class="btn" type="button">6</button>
+          <button onclick="islemtype('-')" class="btn" type="button">-</button>
+        </div>
+        <div class="row">
+          <button onclick="sayi('1')" class="btn" type="button">1</button>
+          <button onclick="sayi('2')" class="btn" type="button">2</button>
+          <button onclick="sayi('3')" class="btn" type="button">3</button>
+          <button onclick="islemtype('+')" class="btn" type="button">+</button>
+        </div>
+        <div class="row">
+          <button onclick="isaret()" class="btn" type="button">+/-</button>
+          <button onclick="sayi('0')" class="btn" type="button">0</button>
+          <button onclick="nokta('.')" class="btn" type="button">.</button>
+          <button onclick="hesapla('=')" class="btn" type="button">=</button>
+        </div>
+      </div>
+    </section>
+    <script src="../homework-01/js/script.js"></script>
+  </body>
+</html>
