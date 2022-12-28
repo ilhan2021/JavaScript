@@ -19,18 +19,28 @@
 <body>
     <div class="container">
         <div class="row p-2">
-            <div class="col-12">
+            <div class="coll m-2">
                 <input type="text" id="textName" placeholder="Type name...">
-                <input type="Number" id="textPoint" placeholder="Point..">
+                <input type="number" id="textPoint" placeholder="Point..">
                 <button type="button" id="btnAdd" class="bg-warning">+Add</button></div>
             <div class="col">
-                <table id="tbl" class="" border="1">
-                    <thead>
-                        <th class="col-1">#</th>
-                        <th class="col-6">Name</th>
-                        <th class="col-2">Point</th>
-                        <th class="col-3"></th>
+                <table id="tlb" class="table table-striped tlb table-bordered" border="1">
+                    <thead class="table-dark">
+                    <tr>
+                        <th class="col">#</th>
+                        <th class="col">Name</th>
+                        <th class="col">Point</th>
+                        <th class="col"></th>
+                    </tr>
                     </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" class="text-end">Average</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                    </tfoot>
 
                 </table>
             </div>

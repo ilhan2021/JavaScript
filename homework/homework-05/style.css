@@ -1,0 +1,47 @@
+:root {
+    --color1: #ffc000;
+    --color2: #2b292a;
+    --color3: #cdcdcd;
+    --color4: #e8e8e8;
+    --color5: #ffffff;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  .coll{
+    min-width: 500px !important;
+    
+  }
+  .tlb > thead > tr > *{
+    border: 2px solid var(--color5);
+    background-color:var(--color2) ;
+    color : var(--color5)
+  }
+
+  .tlb > tbody > tr:nth-of-type(odd) > *{
+    border: 3px solid var(--color5);
+    background-color: var(--color3);
+  }
+  .tlb > tbody > tr:nth-of-type(even) > * {
+    border: 3px solid var(--color5);
+    background-color: var(--color4);
+  }
+  
+  .tlb > tfoot > tr:nth-of-type(odd) > * {
+    border: 3px solid var(--color5);
+    background-color: var(--color4);
+  }
+  .tlb tfoot td:nth-child(2) {
+    text-align: center;
+  }
+  
+  .tlb tbody td:nth-child(3) {
+    text-align: center;
+  }
+  
+  .tlb thead th:nth-child(3) {
+    text-align: center;
+  }

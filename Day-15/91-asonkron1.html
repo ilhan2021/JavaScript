@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Senkron çalışma
+        const sayHello1 = () => {
+            console.log("hello2");
+        }
+        console.log("--------Senkron çalışma---------------")
+        console.log("hello1");
+        sayHello1();
+        console.log("hello3");
+        console.log("hello4");
+
+
+        //Asenkron çalışma
+  
+        const sayHello2 = () => {
+            setTimeout( ()=>{
+                console.log("hello2");   
+            },1000);         
+        };
+        console.log("--------Asenkron Çalışma---------------");
+        console.log("hello1");
+        sayHello2();
+        console.log("hello3");
+        console.log("hello4");
+
+
+    </script>
+</body>
+</html>

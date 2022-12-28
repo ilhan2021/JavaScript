@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="welcome"></h1>
+    <h3 id="message"></h3>
+    <form>
+        <input type="text" id="txtName"><button id=""btnSave>Save</button>
+    </form>
+
+    <script>
+        const handleCounter = ()=>{
+            let counter = localStorage.getItem("pageCounter");
+            
+            counter ??= 0;   // counter = counter ?? 0;   uzunyolu
+            counter++;
+            localStorage.setItem("pageCounter", counter);
+
+            document.getElementById("message").innerHTML = `Bu sayfayı ${counter}. kez ziyaret ettiniz`;
+        }
+
+
+
+
+
+
+        handleCounter();
+    </script>
+</body>
+</html>
