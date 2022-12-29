@@ -45,3 +45,8 @@
   .tlb thead th:nth-child(3) {
     text-align: center;
   }
+  .btn{
+    border: none;
+    background-color: transparent;
+    
+  }
